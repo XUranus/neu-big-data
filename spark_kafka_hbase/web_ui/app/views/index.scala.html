@@ -1,0 +1,18 @@
+@(title:String)
+@main("Welcome to Play") {
+
+    @*
+     * Get an `Html` object by calling the built-in Play search
+     * template and passing a `String` message.
+     *@
+    <div class="jumbotron">
+        <h1 class="display-4">Search It</h1>
+        <p class="lead"> this is a simple search engine build by Kafka + Spark-steaming + Play framework</p>
+        <hr class="my-4">
+        <p>input the keyword,and click search button</p>
+        <form class="form-inline" action="/search" method="GET">
+            <input class="form-control" type="text" name="keyword">
+            <button class="btn btn-primary btn-lg" type="submit">search</button>
+        </form>
+    </div>
+}
